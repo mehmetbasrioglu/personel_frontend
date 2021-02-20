@@ -1,0 +1,87 @@
+.dashboard{
+    flex: 1;
+  
+    overflow-y:scroll;
+    height: 100vh;
+}
+
+
+
+.margin{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+
+
+.grafik-personel{
+    margin: 10px;
+    width: 500px;
+    height: 400px;
+    background: #23272a;
+    
+    color: #A7A9AC;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    transition: all 1s;
+
+    
+}
+.grafik-info{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+}
+.grafik-personel .grafik-header{
+    padding: 10px;
+    text-align: center;
+    
+    background: var(--themecolor);
+    margin-bottom: 20px;
+   
+   
+}
+.grafik-personel .grafik{
+    padding: 20px;
+}
+.grafiktextcenter{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 120px;
+}
+.grafiktextcenter svg{
+    font-size: 80px;
+    color: var(--themecolor);
+}
+.grafik .sayi{
+
+ text-align: center;
+}
+
+@keyframes flipInX {
+    from {
+        -webkit-transform: translate3d(0, -100%, 0);
+        transform: translate3d(0, -100%, 0);
+        visibility: visible;
+      }
+    
+      to {
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+      }
+  }
+
+  .grafikanim1{
+
+    animation: flipInX 1s;
+  }
+  .grafikanim2{
+  
+    animation: flipInX 1s;
+  }

@@ -1,0 +1,266 @@
+html {
+  scroll-behavior: smooth;
+}
+:root{
+  --themecolor: #005288;
+}
+.App {
+  display: grid;
+  place-items: start;
+  height: 100vh;
+  background-color:#2c2f33;
+}
+
+.App_body{
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  color: #1b1b1b;
+  z-index: 1;
+  width: 100%;
+}
+.App_body_img_main{
+  
+  background: url(http://localhost:3080/assets/img/background.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  display: grid;
+  place-items: start;
+  height: 100vh;
+  background-color:#2c2f33;
+}
+.App_body_img{
+  
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  color: #1b1b1b;
+  z-index: 1;
+  width: 100%;
+}
+.personel{
+  display:flex;
+  flex-direction: row;
+  align-items: center;
+}
+.personel span{
+  margin: 10px;
+}
+.grafik-header{
+  padding: 10px;
+  text-align: center;
+  
+  background: var(--themecolor);
+
+ 
+ 
+}
+#customers {
+  font-family: Arial, Helvetica, sans-serif;
+  border: none;
+
+  background: #23272a;
+    
+  color: #A7A9AC;
+ 
+  overflow: hidden;
+
+ 
+}
+#customers .svg{
+  margin-top: 20px;
+  margin-left: 20px;
+  padding: 10px;
+
+  background-color: var(--themecolor);
+}
+
+#customers td, #customers th {
+
+  padding: 20px;
+  border: none;
+  color:#A7A9AC;
+  border-radius: 30px;
+
+}
+
+
+#customers .personelhover:hover {
+  cursor: pointer;
+}
+
+#customers th {
+  padding:30px;
+}
+
+
+.onayla{
+  border: none;
+  background: var(--themecolor);
+  font-size: 30px;
+  display: flex;
+  align-items: center;
+  color:#A7A9AC;
+
+}
+.guncelle{
+  border: none;
+  background: #A7A9AC;
+  font-size: 30px;
+  display: flex;
+  align-items: center;
+  color:var(--themecolor);
+}
+.App_body_left{
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: rgba(35, 39, 42, 0.8);
+  backdrop-filter: blur(10px);
+}
+
+.App_body_left img{
+  max-width: 400px;
+}
+.App_body_right{
+  flex: 1;
+  
+  height: 100vh;
+  color: #A7A9AC;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+.App_body_right_login{
+  background: white;
+  width: 500px;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 20px;
+}
+.App_body_right_login .text{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid black;
+  color: var(--themecolor);
+}
+.inputarea{
+  margin-top: 10px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  border: 2px solid #005288;
+  color: black;
+}
+.inputarea svg{
+  margin: 10px;
+}
+.inputarea input{
+  border: none;
+  outline: 0;
+  flex: 1;
+}
+.checkarea{
+  margin-top: 10px;
+  display: flex;
+  color: black;
+  align-items: center;
+  font-size: 15px;
+}
+
+.girisyap{
+  margin-top: 10px;
+  border: none;
+  background: var(--themecolor);
+  padding: 10px;
+  color: #A7A9AC;
+  border-radius: 0;
+  width: 100%;
+  cursor:pointer;
+  outline: 0;
+}
+
+.text2{
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  text-align: center;
+  color: var(--themecolor);
+}
+
+.secilen{
+  margin: 10px;
+  animation: secilen infinite  0.5s alternate-reverse;
+}
+@keyframes secilen{
+  from{
+    transform: scale(1);
+  }
+  to{
+    color: var(--themecolor);
+    transform: scale(1.2);
+  }
+}
+
+.max{
+ 
+  width: 100px;
+  white-space: nowrap;
+  overflow: hidden !important;
+  text-overflow: ellipsis;
+}
+
+.update_area{
+
+  display: flex;
+  flex-direction: column;
+ 
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 100%;
+  background: #23272a;
+}
+
+.update_area_flex1{
+  flex: 1;
+}
+.update_area_body{
+  padding: 20px;
+  flex: 1;
+}
+.update_area_col1{
+  flex:1;
+  display: flex;
+  flex-direction: column;
+  margin-right: 20px;
+}
+
+.inputupdate{
+  display: flex;
+  flex-direction: column;
+  color: #A7A9AC;
+}
+
+.update_area_col1 button{
+  flex: 1;
+  margin-top: 10px;
+  background: var(--themecolor);
+  border: none;
+  outline: 0;
+  padding: 10px;
+}
